@@ -10,7 +10,7 @@
 }
 
 section, .flyer{
-    background-image: url(/images/1.1.png);
+    background-image: url(../images/1.1.png);
 }
 
 .flyer > img{
