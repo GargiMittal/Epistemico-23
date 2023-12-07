@@ -314,7 +314,7 @@ body{
  /* Your existing styles for larger screens */
 
 #Top-section {
-  background-image: url(./images/backgroundlogo.png);
+  background-image: url(../images/backgroundlogo.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -324,7 +324,7 @@ body{
 /* Media query for mobile view */
 @media only screen and (max-width: 767px) {
   #Top-section {
-      background-image: url(./images/mobile.png);
+      background-image: url(../images/mobile.png);
       background-position: 50% 0;
   }
   #Head-block {
