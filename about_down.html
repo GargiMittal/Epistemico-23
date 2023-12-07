@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/about_down.css">
+    <link rel="shortcut icon" href="../images/circular_logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- <section class="header">
+        <img src="images/8.2.png" alt="Header" height="100px" width="50%">
+        <img src="images/8.png" alt="Header" height="100px" width="50%">
+    </section> -->
+    <div class="mobileHidden">
+
+    <div id="Top-section" style="background-image: url(../images/1.1.png); background-repeat:no-repeat;background-size: cover;width: 100vw;height: 100vh;; background-color: black; box-shadow:0px 0px 20px 10px black inset;" >
+
+    <div class="overlay">
+        <img src="../images/EPIS_text.png" alt="EPISTEMICO" style="height:100px; width:60%;">
+    </div>
+    
+   
+    <div class="display-container">
+        <img class="mySlides" src="../images/college.png" alt="COLLEGE INFORMATION" style="width: 100%;">
+        <img class="mySlides" src="../images/theme-about.png" alt="ABOUT THE THEME" style="width: 100%;">
+        
+        <button class="display-left" onclick="plusDivs(-1)">&#10094</button>
+        <button class="display-right" onclick="plusDivs(1)">&#10095</button>
+    </div>
+
+</div>
+
+</div>
+
+<div class=" pcHidden">
+
+    <div class="golden-bubbles"></div>
+    <div class="header">
+        <img src="../images/EPIS_text.png" alt="EPISTEMICO" style="height:100px; width:100%;">
+    </div>
+    <div class="content-container">
+        <div class="theme-content">
+            <h2>ABOUT THE THEME</h2>
+            <!-- Add your theme content here -->
+            <p>Get ready to embark on a thrilling journey through the beginning of all beginnings, as we unveil our captivating theme for this year's annual event: "Genesis - Exordium of Origin." We invite you to explore the very roots of knowledge, curiosity, and discovery, and it's going to be a joyous adventure like never before!
+                The theme "Genesis - Exordium of Origin" takes us back to the dawn of creation, to those magical moments when the universe itself was born. But we're not stopping there! We'll delve into the origins of ideas, innovation, and the spark of human imagination. This is where it all began, and we're bringing it to life!  Imagine witnessing the birth of a new idea, the flash of inspiration, and the excitement of discovery. During Epistemico 2023, we'll celebrate the very essence of how everything comes into being. From the tiniest particle to the grandest galaxy, from the first scribble on a blank canvas to the birth of groundbreaking theories – we're celebrating the origin of it all!  In the spirit of "Genesis - Exordium of Origin," you can expect riveting talks, interactive workshops, and engaging discussions on the numerous engaging\. Dive into the realms of astronomy, geology, biology, and more as we explore the building blocks of existence.  Creativity knows no bounds, and neither do we! Our annual event will also showcase the literary, technical, cultural, and artistic side of Genesis. Be prepared to immerse yourself in the world of fine arts, music, literature, and performance, as we celebrate the creative sparks that set our imaginations on fire.  Epistemico 2023 is all about kindling your curiosity, sparking innovation, and celebrating the exuberant joy of exploration. Whether you're a scientist, an artist, or simply a lover of knowledge, this event is your playground to delve into the genesis of everything that inspires you.  So, mark your calendars, gear up for a fantastic journey into the depths of creation, and join us at Epistemico 2023 for an unforgettable celebration of "Genesis - Exordium of Origin." Let the joy of discovery lead the way!  Get ready to ignite your passion for learning, and let the origins of the universe inspire your own extraordinary journey. We can't wait to explore, create, and celebrate with you!</p>
+        </div>
+
+        <div class="college-content">
+            <h2>ABOUT THE COLLEGE</h2>
+            <!-- Add your college content here -->
+            <p>Get ready to embark on a thrilling journey through the beginning of all beginnings, as we unveil our captivating theme for this year's annual event: "Genesis - Exordium of Origin." We invite you to explore the very roots of knowledge, curiosity, and discovery, and it's going to be a joyous adventure like never before!
+                The theme "Genesis - Exordium of Origin" takes us back to the dawn of creation, to those magical moments when the universe itself was born. But we're not stopping there! We'll delve into the origins of ideas, innovation, and the spark of human imagination. This is where it all began, and we're bringing it to life!  Imagine witnessing the birth of a new idea, the flash of inspiration, and the excitement of discovery. During Epistemico 2023, we'll celebrate the very essence of how everything comes into being. From the tiniest particle to the grandest galaxy, from the first scribble on a blank canvas to the birth of groundbreaking theories – we're celebrating the origin of it all!  In the spirit of "Genesis - Exordium of Origin," you can expect riveting talks, interactive workshops, and engaging discussions on the numerous engaging\. Dive into the realms of astronomy, geology, biology, and more as we explore the building blocks of existence.  Creativity knows no bounds, and neither do we! Our annual event will also showcase the literary, technical, cultural, and artistic side of Genesis. Be prepared to immerse yourself in the world of fine arts, music, literature, and performance, as we celebrate the creative sparks that set our imaginations on fire.  Epistemico 2023 is all about kindling your curiosity, sparking innovation, and celebrating the exuberant joy of exploration. Whether you're a scientist, an artist, or simply a lover of knowledge, this event is your playground to delve into the genesis of everything that inspires you.  So, mark your calendars, gear up for a fantastic journey into the depths of creation, and join us at Epistemico 2023 for an unforgettable celebration of "Genesis - Exordium of Origin." Let the joy of discovery lead the way!  Get ready to ignite your passion for learning, and let the origins of the universe inspire your own extraordinary journey. We can't wait to explore, create, and celebrate with you!</p>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+
+    </script>
+
+</body>
+</html>

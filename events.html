@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="shortcut icon" href="./images/logoWithoutText.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Events.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Montserrat:wght@100;400&family=Pixelify+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="Top-section">
+        <section>
+            <div id="Head-block">
+                <button id="reg-button"><a href="#event-cards-container" id="reg-button-text"><b>Register For Events</b></a></button>
+            </div>
+        </section>
+    </div>
+    
+
+  <div class="events-section" >
+
+<div id="highlights">
+    <img id="card-container-title" src="../images/Screenshot_2.png">
+    <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="mySlides" src="../images/dance.jpg">
+        <img class="mySlides" src="../images/dance2.jpg">
+        <img class="mySlides" src="../images/dance3.jpg">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <div class="w3-indicator-container">
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
+          
+</div>
+<div>
+    <br>
+    <br>
+  <img id="card-container-title" src="../images/Screenshot_3.png" >
+
+  </div>
+
+  <!--Events Cards-->
+
+  <div id="event-cards-container" >
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/gaming.png);">
+            <div class="event-title">Technical Committee</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc"></div>    
+        </div>  
+    </div>
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/dj\ images.jfif);">
+            <div class="event-title">Cultural Committee</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc"></div>    
+        </div>  
+    </div>
+    
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/robo\ race.jpeg);">
+            <div class="event-title">Innovation Committee</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc"></div>    
+        </div>  
+    </div> 
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/library.jpeg);">
+            <div class="event-title">Literary Committee</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc"></div>    
+        </div>  
+    </div> 
+<!-- 
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/musical.jpeg);">
+            <div class="event-title">Musical Theatre Drama</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 1 <br>TIME: 02 : 00 - 03 : 30 pm <br>VENUE: Auditorium</div>    
+        </div>  
+    </div>
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/tech-scape.jpeg);">
+            <div class="event-title">Tech-scape 2.0 {3rd & 4th year}</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 1 <br>TIME: 03:00 - 4:00 pm<br>VENUE: Room L109</div>    
+        </div>  
+    </div>
+
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/art\ exibition.jpeg);">
+            <div class="event-title">Art Exhibition</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 1 <br>TIME: 02:00. - 4:00. Pm<br>VENUE: Himalaya Bhawan</div>    
+        </div>  
+    </div>
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/mahabharat.png);">
+            <div class="event-title">Chakravyuh : Mahabharat</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 1 <br>TIME: 04 : 00 - 05 : 00 pm<br>VENUE: Himalaya Bhawan</div>    
+        </div>  
+    </div>
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/library.jpeg);">
+            <div class="event-title">Literaray Heaven</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 1 <br>All Day<br>VENUE: Shivalik Ground</div>    
+        </div>  
+    </div>
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/harry.jpeg);">
+            <div class="event-title">Theme Party : Hogwarts Express</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 1 <br>TIME: 05 : 00 - 08 : 00 pm<br>VENUE: Auditorium</div>    
+        </div>  
+    </div>
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/tech\ quiz.jpg);">
+            <div class="event-title">Tech Quiz</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 09 : 00 - 11 : 00 am<br>VENUE: MPC</div>    
+        </div>  
+    </div>
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/groove.jpeg);">
+            <div class="event-title">Grroove Gallore</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 09 : 30 - 11 : 00 am<br>VENUE: Auditorium</div>    
+        </div>  
+    </div>
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/auction.png);">
+            <div class="event-title">IPL Auction</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 10 : 00 - 12 : 00 PM<br>VENUE: Himalaya Bhawan</div>    
+        </div>  
+    </div>
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/harmony.png);">
+            <div class="event-title">Harmony Hype : Singing &
+                Instrumental</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 01 : 00 - 02 : 30 pm<br>VENUE: Auditorium</div>    
+        </div>  
+    </div>
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/archery.jpeg);">
+            <div class="event-title">Archery: Hit the bull's eye</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 02 : 00 - 03 : 00 pm<br>VENUE: MPC</div>    
+        </div>  
+    </div>
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/gaming.png);">
+            <div class="event-title">Gaming</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 02 : 00 - 04 : 00 PM<br>VENUE: MPC</div>    
+        </div>  
+    </div>
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/kavi.jfif);">
+            <div class="event-title">Shaam-ae-nazm</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 04 : 00 - 05 : 00 pm<br>VENUE: Auditorium</div>    
+        </div>  
+    </div>
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/open\ mic.jfif);">
+            <div class="event-title">Canvas : OpenMic</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 04 : 00 - 05 : 30 pm<br>VENUE: Shivalik Ground</div>    
+        </div>  
+    </div>
+
+    <div class="main-card">
+        <div class="upper-image" style="background-image:url(./images/fashon\ show.jfif);">
+            <div class="event-title">Fashion Parade</div>
+        </div>
+    
+        <div class="lower-box">
+            <div class="event-desc">Day 2 <br>TIME: 05 : 00 - 07: 00 pm<br>VENUE: Shivalik Bhawan</div>    
+        </div>  
+    </div>
+
+
+     -->
+
+  </div>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+    // Automatically advance the slide every 3 seconds
+var slideInterval = setInterval(function() {
+  plusDivs(1);
+}, 5000);
+    </script>
+</body>
+
+</html>
