@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ruslan Display';
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-table;
+    padding: 12px 28px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: gold;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+
+}
+
+.container{
+    width: 100%;
+   height: 100vh; 
+   background-color:rgba(0,0,0,0.4);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.content{
+    margin-top:0px;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 95px;
+    color: gold;
+    margin-bottom: 0px;
+    transition: 0.3s;
+}
+
+.content a{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border:2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+}
+
+.content a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+@media(min-aspect-ratio:16/9){
+    .background-clip{
+         width: 100%;
+         height: auto;
+    }
+ }
+ 
+ @media(max-aspect-ratio:16/9){
+     .background-clip{
+          width: auto;
+          height: 100%;
+     }
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* Media query for mobile devices with a maximum width of 600px */
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+
+    h1 img {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.0);
+        align-items: flex-start; /* Align content to the top */
+        justify-content: center;
+        padding-top: 20px; /* Add padding to the top */
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 55px; /* Adjust the font size for mobile */
+        margin-bottom: 10px; /* Adjust the margin for mobile */
+    }
+
+    .content a {
+        font-size: 16px;
+        padding: 10px 15px; /* Adjust the padding for mobile */
+        color: gold; /* Add the font color for mobile */
+        border: 2px solid gold; /* Add the border color for mobile */
+    }
+
+    .content a:hover {
+        background-color: gold;
+        color: black;
+    }
+    body, html {
+        overflow: hidden;
+      }
+        .container {
+           
+            overflow: hidden;
+            
+        }
+        .video-container {
+            overflow: hidden; /* Remove scrolling on the container */
+        }
+    
+        @viewport {
+            max-zoom: 1.0;
+            min-zoom: 1.0;
+        }
+}
+
+

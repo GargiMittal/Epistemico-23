@@ -1,0 +1,375 @@
+body{
+    margin: 0px 0px;
+    background-image:linear-gradient(#0c639e #095486 #063c5f);
+    font-family:Montserrat,sans-serif ;
+    background-color: #000;
+  }
+
+#Top-section{
+    align-items: end;
+    background-position: 15% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#Head-block{
+    display: flex;
+    flex-direction: column;
+    margin-left: 600px;
+    margin-right: 30px;
+
+}
+#event-heading {
+    margin: 0; /* Remove specific margin values */
+    color: rgb(237, 223, 223);
+    font-size: 70px;
+    font-weight: 600;
+    text-align: right; /* Change "end" to "right" for consistency */
+}
+
+#genesis-subheading {
+    text-align: right; /* Change "end" to "right" for consistency */
+    color: white;
+    margin-top: 0; /* Remove specific margin-top value */
+    font-size: 30px;
+}
+
+#line-desc{
+    color: white;
+    font-size: 45px;
+    margin-right: 20px;
+    margin-left: 465px;
+    margin-top: -15px;
+    font-weight: 600;
+
+}
+
+#date{
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-left: 750px;
+}
+
+#reg-button{
+    margin-top: 450px;
+    padding:15px 30px;
+    margin-right: 50px;
+    margin-left:700px;
+    border: none;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2); /* Glowing effect */
+    background-color: white;
+    border-radius: 5px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#reg-button:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7); /* Glowing effect */
+}
+
+  
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    25% {-webkit-transform: rotate(-15deg);}
+    50% {-webkit-transform: rotate(25deg);}
+    75% {-webkit-transform: rotate(-15deg);}
+    100% {-webkit-transform: rotate(0deg);}
+  }
+
+  @-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(1deg);}
+    25% {-ms-transform: rotate(-1deg);}
+    50% {-ms-transform: rotate(1.5deg);}
+    75% {-ms-transform: rotate(-5deg);}
+    100% {-ms-transform: rotate(0deg);}
+  }
+  
+  @keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+#reg-button-text{
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 600;
+    color: rgb(5, 5, 5);
+    white-space: nowrap;
+}
+
+#reg-button-text {
+  color: #7c4b00fb; /* Change the color to red (#ff0000), you can use any valid color value */
+
+}
+
+#card-container-title {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #000;
+    color: white;
+}
+
+#card-container-title  {
+    display: block;
+
+    width: 500px; /* Adjust the image width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+#event-container-title  {
+  display: block;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #000;
+  color: white;
+  width: 400px; /* Adjust the image width as needed */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+#event-cards-container{
+    margin-top: 50px;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-left: 100px;margin-right:100px;
+}
+
+.main-card {
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 310px;
+    letter-spacing: 1px;
+    margin: 20px;
+    margin-bottom: 30px;
+    transition: all .3s ease-in-out;
+    width: 220px;
+    transition: transform .2s;
+    border-radius: 10px;
+}
+
+.main-card:hover{
+    transform: scale(1.1);
+}
+
+.upper-image{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    height: 180px;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px ;
+    width: 100%;
+}
+
+
+
+.event-title{
+        background: linear-gradient(180deg,transparent,#000);
+        overflow: hidden;
+        padding: 60px 0 10px 15px;
+    
+}
+.lower-box {
+    border-radius: 0 0 15px 15px;
+    font-size: 14px;
+    height: 110px;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+.event-desc {
+    height: 90px;
+    line-height: 1.1;
+    overflow: hidden;
+    text-align: left;
+}
+
+.action {
+    color: var(--color2);
+    float: right;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.lower-box p {
+    color: maroon;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    text-align: end;
+}
+
+/*hilights*/
+/* Style the container */
+.w3-content {
+    max-width: 800px;
+    background-color: #000; /* Dark background color */
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Style the images */
+  .mySlides {
+    display: none;
+    width: 100%
+  }
+  
+  /* Style the navigation buttons */
+  .w3-center {
+    text-align: center;
+  }
+  
+  .w3-left,
+  .w3-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+  }
+
+  .w3-left {
+    left: 0;
+  }
+  
+  .w3-right {
+    right: 0;
+  }
+  
+  .w3-left:hover,
+  .w3-right:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+  }
+  
+  /* Style the navigation dots */
+  .w3-indicator-container {
+    text-align: center;
+    margin-top: 10px; /* Adjust the spacing between images and indicators */
+  }
+  
+  .w3-badge {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+   
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    border: 1px solid #fff;
+    border-radius: 50%; /* Make the indicators circular */
+    display: inline-block;
+  }
+  
+  .w3-badge:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Darker on hover */
+  }
+  
+  /* Style the currently active dot */
+  .w3-white {
+    background-color: #fff;
+  }
+  
+  /* Style the text color for navigation buttons and dots */
+  .w3-text-white {
+    color: #fff;
+  }
+  
+  /* Style the text inside the dots */
+  .w3-border {
+    color: #fff;
+  }
+  
+  /* Optional: Add some margin to the bottom of the container */
+  .w3-display-bottommiddle {
+    margin-bottom: 20px;
+  }
+  
+ /* Your existing styles for larger screens */
+
+#Top-section {
+  background-image: url(../images/backgroundlogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 767px) {
+  #Top-section {
+      background-image: url(../images/mobile.png);
+      background-position: 50% 0;
+  }
+  #Head-block {
+    margin-left: 20px; /* Adjust the margin for smaller screens */
+    margin-right: 20px; /* Adjust the margin for smaller screens */
+  }
+
+  #line-desc {
+    margin-left: 20px; /* Adjust the margin for smaller screens */
+  }
+
+  #date {
+    margin-left: 20px; /* Adjust the margin for smaller screens */
+  }
+
+  #reg-button {
+    margin-top: 400px; /* Adjust the margin for smaller screens */
+    margin-left: 10px; /* Adjust the margin for smaller screens */
+    margin-right: 10px; /* Adjust the margin for smaller screens */
+    font-size: smaller;
+  }
+  
+  #card-container-title {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+
+  .mySlides {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+  #event-cards-container {
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    align-items: center;
+}
+
+.main-card {
+    width: 100%;
+    margin: 10px 0;
+   
+  }
+  .w3-left,
+  .w3-right {
+      display: none; /* Hide the image navigation arrows in mobile view */
+  }
+}
+

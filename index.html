@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home &nbsp;| Epistemico </title>
+    <link href='https://fonts.googleapis.com/css?family=Ruslan Display' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('./images/globe.png') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    background-position: center center;
+    background-attachment: fixed;
+        }
+
+        #rotating-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.7); /* Larger size */
+            animation: rotate 20s linear infinite; /* Slower rotation */
+        }
+
+        #non-rotating-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Ensure it appears on top of the rotating image */
+            background-color: black; /* Black background */
+            padding: 5px; /* Add padding for visibility */
+        }
+
+        #button-go {
+            position: absolute;
+            z-index: 2;
+            font-family: 'Ruslan Display';
+            color: silver;
+            outline: 2px solid rgb(163, 161, 161);
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 30px;            
+            transition: transform .2s;
+            animation: beat .500s infinite alternate;
+            transform-origin: center;
+            background-color: #cc9028;
+            border-radius: solid 2px rgb(110, 108, 108);
+            margin-top: 450px/* Adjusted margin-top to move the button lower */
+        }
+
+        #button-go:hover {
+            transform: scale(1.35);
+            background-color: rgb(36, 32, 23);
+            animation-play-state: paused;
+            box-shadow: 2px 2px 4px goldenrod;
+        }
+
+        #button-go a {
+            text-decoration: none;
+            color: white;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: translate(-50%, -50%) scale(0.7) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) scale(0.7) rotate(360deg);
+            }
+        }
+
+        @keyframes beat {
+            to { transform: scale(1.05); }
+        }
+        @media only screen and (max-width: 768px) {
+    #rotating-image {
+        transform: translate(-50%, -50%) scale(0.9); /* Adjusted scale for a moderate size on mobile */
+        top: 50%; /* Centering the image vertically */
+        left: 50%; /* Centering the image horizontally */
+        position: fixed; /* Use position: fixed to ensure it stays centered */
+        margin-top: 0; 
+    }
+
+    #button-go {
+        font-size: 30px; /* Adjusted font size for the button on mobile */
+        padding: 16px 16px; /* Adjusted padding for the button on mobile */
+        margin-top: 350px; /* Adjusted margin-top to move the button lower on mobile */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="rotating-image">
+        <img src="./images/circular_logo.png" alt="Rotating Image">
+    </div>
+    
+    <div id="non-rotating-image">
+        <img src="./images/epis_canva_text_img.png" alt="Non-Rotating Image">
+    </div>
+
+    <button id="button-go">
+        <a href="html/about.html">Genesis Onset</a>
+    </button>
+</body>
+</html>

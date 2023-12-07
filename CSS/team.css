@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    /* background-image: url(./1.1.png); */
+}
+.flyer{
+    /* background-color: #050201; */
+    /* background-image: url(./1.1.png); */
+    width: 100%;
+    
+}
+
+section, .flyer{
+    background-image: url(../images/1.1.png);
+}
+
+.flyer > img{
+    display: block;
+    margin: auto;
+    height: 740px;
+    width: 900px;
+}
+
+.credits {
+    background-color: #050201;
+    height: 150px;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    border-top: 3px solid rgb(249, 244, 236);
+}
+
+.credits > img {
+    height: 140px;
+    width: 100%;
+    padding-top: 5px;
+}
