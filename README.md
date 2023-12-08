@@ -43,5 +43,13 @@
             <sub><b>Krishna</b></sub>
         </a>
     </td>
+      <td align="center">
+        <a href="https://github.com/Kriti523">
+            <img src="https://github.com/Kriti523.png?size=150"  alt="Kriti523"/>
+            <br />
+            <sub><b>Kriti</b></sub>
+        </a>
+    </td>
+    
 
 <table>
