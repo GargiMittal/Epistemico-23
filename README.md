@@ -50,6 +50,13 @@
             <sub><b>Kriti</b></sub>
         </a>
     </td>
+     <td align="center">
+        <a href="https://github.com/YogitaBhagatni">
+            <img src="https://github.com/github.png?size=150"  alt="YogitaBhagatni"/>
+            <br />
+            <sub><b>Kriti</b></sub>
+        </a>
+    </td>
     
 
 <table>
