@@ -54,7 +54,7 @@
         <a href="https://github.com/YogitaBhagatni">
             <img src="https://github.com/github.png?size=150"  alt="YogitaBhagatni"/>
             <br />
-            <sub><b>Kriti</b></sub>
+            <sub><b>Yogita</b></sub>
         </a>
     </td>
     
