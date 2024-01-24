@@ -12,9 +12,9 @@
 
 # 💭 About The project 
 
-💠_ This repository serves as the official platform for the inaugural website of GWECA Government Women's Engineering College Ajmer, dedicated to the upcoming college fest, Epistemico '23. The fest will revolve around the theme of 'Genesis. _
+💠 This repository serves as the official platform for the inaugural website of GWECA Government Women's Engineering College Ajmer, dedicated to the upcoming college fest, Epistemico '23. The fest will revolve around the theme of 'Genesis. 
 
-💠_This website has been crafted using HTML, CSS, and JavaScript._
+💠 This is a responsive website that has been crafted using HTML, CSS, and JavaScript.
 
 💠Live At [https://github.io/GargiMittal/Epistemico-23/](https://gargimittal.github.io/Epistemico-23/)
 
